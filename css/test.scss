@@ -1,0 +1,186 @@
+    * {
+        font-family: 微軟正黑體;
+    }
+
+    $big_img_banner1-url:'/img/x-cube-stage-3.jpg';
+    $big_img_banner2-url:'/img/x-cube-stage-2.jpg';
+    $big_img_banner3-url:'/img/x-cube-stage-4.jpg';
+    @mixin big_img_banner-background-image($url) {
+        background-image: url($url);
+        background-size: cover;
+        width: 100%;
+        height: calc(100vh - 60px);
+    }
+
+    .big_img_banner_logo_out {
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        width: 35vw;
+        height: 35vw;
+        .big_img_banner_logo {
+            background-image: url('/img/x-cube-logo.png');
+            background-size: cover;
+            z-index: 1000;
+            width: 35vw;
+            height: 35vw;
+        }
+    }
+
+    #big_img_banner {
+        width: 100%;
+        height: calc(100vh - 60px);
+        #big_img_banner1 {
+            @include big_img_banner-background-image($big_img_banner1-url);
+        }
+        #big_img_banner2 {
+            @include big_img_banner-background-image($big_img_banner2-url);
+        }
+        #big_img_banner3 {
+            @include big_img_banner-background-image($big_img_banner3-url);
+        }
+    }
+
+    .Dj_croud {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-image: url('/img/Dj backgroud -2.jpg');
+        background-attachment: fixed;
+        background-position: 60% 35%;
+        .dj_title {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 60%);
+            p {
+                color: #fff;
+                line-height: 5px;
+            }
+            hr {
+                height: 2px;
+                background-color: rgb(255, 215, 38);
+            }
+        }
+        .container {
+            padding-top: 10vh;
+            .row {
+                .dj img {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .story_all {
+        height: 100vh;
+        .story {
+            border: solid 1px;
+            height: 50vh;
+            &.story-1 {
+                background-color: #241E20;
+                background-image: url('/img/x-cube-text-logo.png');
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-position: 0% 5%;
+                p{
+                    color: white;
+                    width: 70%;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 5%;
+                }
+            }
+            &.story-2 {
+                background-image: url('/img/X-CUBE-BG2.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &.story-3 {
+                background-image: url('/img/X-CUBE-BG1.jpg');
+                background-size: cover;
+            }
+            &.story-4 {
+                background-color: #241E20;
+                background-image: url('/img/x-cube-logo2.jpg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    .contact {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-image: url('/img/music-light-celebration-concert-dance-club-695522-pxhere.jpg');
+        .contact_title {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 60%);
+            p {
+                color: #fff;
+                line-height: 5px;
+            }
+            hr {
+                height: 2px;
+                background-color: rgb(255, 215, 38);
+            }
+        }
+        #map {
+            width: 80%;
+            height: 80vh;
+            top: 10vh;
+            margin: auto;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        background-image: url('/img/footer.jpg');
+        background-size: cover;
+        background-position: 0% 58%;
+        .footer_logo img {
+            width: 360px;
+            height: auto;
+            position: absolute;
+        }
+        .footer_container {
+            display: inline-block;
+            width: 440px;
+            height: auto;
+            position: absolute;
+            top: 90px;
+            right: 140px;
+            p {
+                line-height: 35px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+            hr {
+                width: 77%;
+                text-align: center;
+                height: 2px;
+                background-color: rgb(255, 215, 38);
+            }
+            h3 {
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+        }
+        .footer_icon {
+            display: flex;
+            position: absolute;
+            bottom: 15px;
+            right:15px;
+            .fb_icon{
+                margin-right: 15px;
+            }
+        }
+    }

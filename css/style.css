@@ -1,0 +1,105 @@
+*{
+    font-family: 微軟正黑體;
+}
+.big_img_banner_logo_out{
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    width: 35vw;
+    height: 35vw;
+}
+.big_img_banner_logo{
+    background-image: url('/img/x-cube-logo.png');
+    background-size: cover;
+    z-index: 1000;
+    width: 35vw;
+    height: 35vw;
+}
+/* #big_img_banner_logo img{
+    max-width: 100%;
+} */
+
+#big_img_banner{
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+#big_img_banner1{
+    background-image: url('/img/x-cube-stage-3.jpg');
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+#big_img_banner2{
+    background-image: url('/img/x-cube-stage-2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+#big_img_banner3{
+    background-image: url('/img/x-cube-stage-4.jpg');
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+.Dj_croud{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('/img/Dj backgroud -2.jpg');
+    background-attachment: fixed;
+    background-position: 60% 35%;
+}
+.dj img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.Dj_croud .container{
+    padding-top: 10vh;
+}
+.dj_title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,60%);
+}
+.dj_title p{
+    color: #fff;
+    line-height: 5px;
+}
+.Dj_croud hr{
+    height: 2px;
+    background-color: yellow;
+}
+.story_all{
+    height: 100vh;
+}
+.story{
+    border: solid 1px;
+    height: 50vh;
+}
+.story-1{
+    background-color: #241E20;
+    background-image: url('/img/x-cube-text-logo.png');
+    background-size: 50%; 
+    background-repeat: no-repeat;
+    background-position-x:left;
+    background-position-y: top;
+}
+.story-2{
+    background-image: url('/img/X-CUBE-BG2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.story-3{
+    background-image: url('/img/X-CUBE-BG1.jpg');
+    background-size: cover;
+}
+.story-4{
+    background-color: #241E20;
+    background-image: url('/img/x-cube-logo2.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}

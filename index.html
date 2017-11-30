@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/test.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK-2AJr6iIJWRjNv0xZLMfsu4th_6BQqw&callback=initialize">
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/img/x-cube-text-logo.png" width="166.35" height="31.3" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item disabled">
+                        <a class="nav-link text-white" href="#">HOME / 首頁
+                        </a>
+                    </li>
+                    <li class="nav-item" id="DJ">
+                        <a class="nav-link disabled text-white" href="#">DJ / 專業混音</a>
+                    </li>
+                    <li class="nav-item" id="booking">
+                        <a class="nav-link disabled text-white" href="#">Booking Introduction/ 包廂定位</a>
+                    </li>
+                    <li class="nav-item" id="contact">
+                        <a class="nav-link disabled text-white" href="#">Contact / 聯繫方式</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="big_img_banner_logo_out">
+        <div data-tilt class="big_img_banner_logo"></div>
+    </div>
+
+    <div id="big_img_banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div id="big_img_banner1" class="swiper-slide"></div>
+                <div id="big_img_banner2" class="swiper-slide"></div>
+                <div id="big_img_banner3" class="swiper-slide"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="Dj_croud">
+        <div class="dj_title">
+            <p>Dj/專業混音</p>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="dj dj1 col-sm-6 col-xl-4"><img src="/img/dj04.jpg" alt=""></div>
+                <div class="dj dj2 col-sm-6 col-xl-4"><img src="/img/dj01.jpg" alt=""></div>
+                <div class="dj dj3 col-sm-6 col-xl-4"><img src="/img/dj03.jpg" alt=""></div>
+                <div class="dj dj4 col-sm-6 col-xl-4"><img src="/img/dj05.jpg" alt=""></div>
+                <div class="dj dj5 col-sm-6 col-xl-4"><img src="/img/dj02.jpg" alt=""></div>
+                <div class="dj dj6 col-sm-6 col-xl-4"><img src="/img/dj06.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="story_all">
+        <div class="row" style="margin:0"> 
+                <div class="story story-1 col-6"><p>擁有最好的夜總會感官體驗，涉及最先進的技術，強烈的聲音和視覺效果，充滿活力的照明和絢麗的色彩，在夜晚的城市裡讓音樂擁抱環繞著你，在夜晚盡情地宣洩慾望吧。</p></div>
+                <div class="story story-2 col-6"></div>
+                <div class="story story-3 col-6"></div>
+                <div class="story story-4 col-6"></div>
+            </div>
+    </div>
+    <div class="contact">
+        <div class="contact_title">
+            <p>Contact/聯繫方式</p>
+            <hr>
+        </div>
+        <div id="map"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_logo"><img src="/img/x-cube-logo.png" alt=""></div>
+        <div class="footer_container">
+            <p>傳承中區夜店指標"XAGA club"</p>
+            <h3>台中夜間娛樂新據點"X-CUBE club"</h3>
+            <hr>
+            <p>訂位專線:0901080555</p>
+            <p>LINE ID : xcube1</p>
+        </div>
+        <div class="footer_icon">
+            <div class="fb_icon"><a href="https://zh-tw.facebook.com/xcube.club/" target="_blank"><img src="/img/facebook.png" alt=""></a></div>
+            <div class="ig_icon"><a href="https://www.instagram.com/xcube.club/" target="_blank"><img src="/img/instagram.png" alt=""></a></div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/tilt.jquery.js"></script>
+    <script src="/js/vanilla-tilt.babel.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            freeMode: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        VanillaTilt.init(document.querySelector(".big_img_banner_logo"), {
+            max: 25,
+            speed: 400
+        });
+        function initialize() {
+                var uluru = { lat: 24.1457405, lng: 120.642433 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center:uluru,
+                    zoom: 17,
+                    styles: [
+                        { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                        { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                        { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+                        {
+                            featureType: 'administrative.locality',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#d59563' }]
+                        },
+                        {
+                            featureType: 'poi',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#d59563' }]
+                        },
+                        {
+                            featureType: 'poi.park',
+                            elementType: 'geometry',
+                            stylers: [{ color: '#263c3f' }]
+                        },
+                        {
+                            featureType: 'poi.park',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#6b9a76' }]
+                        },
+                        {
+                            featureType: 'road',
+                            elementType: 'geometry',
+                            stylers: [{ color: '#38414e' }]
+                        },
+                        {
+                            featureType: 'road',
+                            elementType: 'geometry.stroke',
+                            stylers: [{ color: '#212a37' }]
+                        },
+                        {
+                            featureType: 'road',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#9ca5b3' }]
+                        },
+                        {
+                            featureType: 'road.highway',
+                            elementType: 'geometry',
+                            stylers: [{ color: '#746855' }]
+                        },
+                        {
+                            featureType: 'road.highway',
+                            elementType: 'geometry.stroke',
+                            stylers: [{ color: '#1f2835' }]
+                        },
+                        {
+                            featureType: 'road.highway',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#f3d19c' }]
+                        },
+                        {
+                            featureType: 'transit',
+                            elementType: 'geometry',
+                            stylers: [{ color: '#2f3948' }]
+                        },
+                        {
+                            featureType: 'transit.station',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#d59563' }]
+                        },
+                        {
+                            featureType: 'water',
+                            elementType: 'geometry',
+                            stylers: [{ color: '#17263c' }]
+                        },
+                        {
+                            featureType: 'water',
+                            elementType: 'labels.text.fill',
+                            stylers: [{ color: '#515c6d' }]
+                        },
+                        {
+                            featureType: 'water',
+                            elementType: 'labels.text.stroke',
+                            stylers: [{ color: '#17263c' }]
+                        }
+                    ]
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+            $('#DJ').click(function () {
+                    $('html,body').animate({ scrollTop: $('.Dj_croud').offset().top }, 800);
+                });
+            $('#contact').click(function () {
+                    $('html,body').animate({ scrollTop: $('.contact').offset().top }, 800);
+                });
+            google.maps.event.addDomListener(
+                window, 'load', initialize); 
+    </script>
+</body>
+
+</html>
