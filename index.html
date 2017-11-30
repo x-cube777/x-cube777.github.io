@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="/dist/css/test.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/swiper.min.css">
+    <link href="/css/lightbox.css" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK-2AJr6iIJWRjNv0xZLMfsu4th_6BQqw&callback=initialize">
     </script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/img/x-cube-text-logo.png" width="166.35" height="31.3" alt="">
@@ -68,21 +69,21 @@
         </div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="dj dj1 col-sm-6 col-xl-4"><img src="/img/dj04.jpg" alt=""></div>
-                <div class="dj dj2 col-sm-6 col-xl-4"><img src="/img/dj01.jpg" alt=""></div>
-                <div class="dj dj3 col-sm-6 col-xl-4"><img src="/img/dj03.jpg" alt=""></div>
-                <div class="dj dj4 col-sm-6 col-xl-4"><img src="/img/dj05.jpg" alt=""></div>
-                <div class="dj dj5 col-sm-6 col-xl-4"><img src="/img/dj02.jpg" alt=""></div>
-                <div class="dj dj6 col-sm-6 col-xl-4"><img src="/img/dj06.jpg" alt=""></div>
+                <div class="dj dj1 col-sm-6 col-xl-4"><a href="/img/dj04.jpg" data-lightbox="roadtrip"><img src="/img/dj04.jpg" alt=""></a></div>
+                <div class="dj dj2 col-sm-6 col-xl-4"><a href="/img/dj01.jpg" data-lightbox="roadtrip"><img src="/img/dj01.jpg" alt=""></a></div>
+                <div class="dj dj3 col-sm-6 col-xl-4"><a href="/img/dj03.jpg" data-lightbox="roadtrip"><img src="/img/dj03.jpg" alt=""></a></div>
+                <div class="dj dj4 col-sm-6 col-xl-4"><a href="/img/dj05.jpg" data-lightbox="roadtrip"><img src="/img/dj05.jpg" alt=""></a></div>
+                <div class="dj dj5 col-sm-6 col-xl-4"><a href="/img/dj02.jpg" data-lightbox="roadtrip"><img src="/img/dj02.jpg" alt=""></a></div>
+                <div class="dj dj6 col-sm-6 col-xl-4"><a href="/img/dj06.jpg" data-lightbox="roadtrip"><img src="/img/dj06.jpg" alt=""></a></div>
             </div>
         </div>
     </div>
     <div class="story_all">
         <div class="row" style="margin:0"> 
-                <div class="story story-1 col-6"><p>擁有最好的夜總會感官體驗，涉及最先進的技術，強烈的聲音和視覺效果，充滿活力的照明和絢麗的色彩，在夜晚的城市裡讓音樂擁抱環繞著你，在夜晚盡情地宣洩慾望吧。</p></div>
-                <div class="story story-2 col-6"></div>
-                <div class="story story-3 col-6"></div>
-                <div class="story story-4 col-6"></div>
+                <div class="story story-1 col-12 col-md-6 col-xl-6"><p>擁有最好的夜總會感官體驗，涉及最先進的技術，強烈的聲音和視覺效果，充滿活力的照明和絢麗的色彩，在夜晚的城市裡讓音樂擁抱環繞著你，在夜晚盡情地宣洩慾望吧。</p></div>
+                <div class="story story-2 col-12 col-md-6 col-xl-6"></div>
+                <div class="story story-3 col-12 col-md-6 col-xl-6"></div>
+                <div class="story story-4 col-12 col-md-6 col-xl-6"></div>
             </div>
     </div>
     <div class="contact">
@@ -114,6 +115,7 @@
     <script src="/js/swiper.min.js"></script>
     <script src="/js/tilt.jquery.js"></script>
     <script src="/js/vanilla-tilt.babel.min.js"></script>
+    <script src="/js/lightbox.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
