@@ -176,6 +176,8 @@
         background-position: 0% 58%;
         .footer_logo img {
             width: 360px;
+            margin-top: 3.5vh;
+            margin-left: 10vw;
             height: auto;
             position: absolute;
         }
@@ -234,6 +236,7 @@
                     width: 25vw;
                     left: 25%;
                     transform: translate(-50%,15%);
+                    margin: 0px;
                 }
             }
             .footer_container{
