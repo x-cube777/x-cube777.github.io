@@ -213,6 +213,43 @@
         }
     }
 
+    @media screen and (min-width: 1440px){
+        .story_all{
+            .row{
+                .story.story-4{
+                    padding: 0;
+                    padding-left: 7%;
+                }
+                h3{
+                    font-size:55px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+        .footer{
+            .footer_logo{
+                img{
+                    width: 25vw;
+                    left: 25%;
+                    transform: translate(-50%,15%);
+                }
+            }
+            .footer_container{
+                width: 25vw;
+                top: 30%;
+                right: 10%;
+                p{
+                    line-height: 20px;
+                    font-size: 25px;
+                }
+                h3{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
     @media screen and (max-width: 960px) {
         .footer_logo {
             display: none;
